@@ -2,5 +2,7 @@ import app from "./app.js"
 import { env } from "./config/env.js"
 
 app.listen(env.PORT, () => {
-    console.log(`Vartalaap running and listening at port: ${env.PORT}`)
+    console.log(
+        `Vartalaap server is up and running at: http://localhost:${env.PORT}/`
+    )
 })
